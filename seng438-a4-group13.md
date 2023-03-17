@@ -14,18 +14,27 @@ The main objective of this laboratory assignment was to gain familiarity with th
 
 # Analysis of 10 Mutants of the Range class 
 
-### Range Mutation Test Statistics 
-![OriginalRange]
-
-### DataUtilities Mutation Test Statistics
 
 
 
 
 # Report all the statistics and the mutation score for each test class
 
+## Original Range Mutation Test Statistics 
+![OriginalRange](OriginalRange.png)
+
+
+### Original DataUtilities Mutation Test Statistics
+![OriginalDataUtilities](OriginalDataUtilities.png)
 
 # Analysis drawn on the effectiveness of each of the test classes
+
+## New Range Mutation Test Statistics
+![NewRange](NewRange.png)
+
+## New DataUtilities Mutation Test Statistics
+![NewRange](NewRange.png)
+
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
