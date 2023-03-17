@@ -31,10 +31,13 @@ The main objective of this laboratory assignment was to gain familiarity with th
 
 ## New Range Mutation Test Statistics
 ![NewRange](NewRange.png)
+Our Mutation score went from 57% to 67% which is a 10 percent increase from the orignal test case suite for the Range class. 
 
 ## New DataUtilities Mutation Test Statistics
 ![NewRange](NewRange.png)
+Our Mutation score went from 78%% to 88% which is a 10 percent increase from the orignal test case suite for the DataUtilities class. 
 
+In brief, our group was able to achieve a 10 percent increase on both classes meaning we solved a good protion of the survived mutants.
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
