@@ -385,13 +385,13 @@ Steps :
 1. Familiarize with the Amazon Website
 
 
-2. Explore different functions and record steps on how to get there
+2. Explore different functions and record instructions to get to the function
 
 
-4. Write test cases for each function
+4. Write test cases for each function listed above in Selenium IDE
 
 
-5. Execute
+5. Execute the test cases
 
 
 Our group decided to use the Amazon website in order do do the selenium test cases. First we wanted to get familiar with the website by exploring the functions. We had to record a few steps on how to get to each functionality which is part of our test case design process. We then chose 4 functionalities of the website to make our test cases around. Firstly we explored the login function making one test case with a valid login and one with invalid login to make sure the function works. Secondly, we looking at the purchasing/Add to cart functionality where we first searched for an iteam then added to the cart. In addition, we made another test case to remove the item from the cart. Thirdly we wanted to check the functionality of language change on the website by first selecting to change the language of the website to french and another test case to change it back to english. Furthermore we explored the functionality of changing departments on the website by filtering the search to amazon devices and we create another test case to change the department back to all. Lastly, we added a test case to go back to the home page through pressing the amazon button at the top of the page. Our group made these test cases through our exploratory phase familiarizing ourselves with the website. 
