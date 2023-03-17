@@ -1,0 +1,630 @@
+{
+  "id": "c6a42115-1a9f-4cca-83cf-d106b59b557d",
+  "version": "2.0",
+  "name": "SENG438_Lab4_Amazon",
+  "url": "https://www.amazon.ca/",
+  "tests": [{
+    "id": "6e1ea1ae-32b8-4306-9e7d-5f35d808bdd8",
+    "name": "Amazon- Search Bar",
+    "commands": [{
+      "id": "41c99f0e-73fe-4f2a-99f0-fb5b0798cfc5",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ce7c501f-7b35-4e70-b8b0-9e3e3c9eb0bd",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e03f0eca-121e-42f9-9950-2cedb2301a94",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "waterbottle"
+    }, {
+      "id": "f15cc365-f059-421d-af48-79b41f711afd",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "3dad63c8-d0ea-4a6a-9a54-7cdc0c40c47e",
+    "name": "Amazon- Add to Cart",
+    "commands": [{
+      "id": "db96d09f-23b5-4fba-a914-e4c97c375fbb",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a85135a-ceb3-4f99-a447-757047caae0b",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "426c043d-b47b-4d99-a125-b942be36809a",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "waterbottle"
+    }, {
+      "id": "e4db73fb-911f-4281-81fa-ff97bdd40547",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30238546-e31e-4874-822d-5068267591c3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sg-col-4-of-24:nth-child(4) .s-product-image-container .a-section",
+      "targets": [
+        ["css=.sg-col-4-of-24:nth-child(4) .s-product-image-container .a-section", "css:finder"],
+        ["xpath=//div[@id='search']/div/div/div/span/div/div[4]/div/div/div/div/div[2]/span/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div[2]/span/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "875e501c-ac19-4877-a1e6-5cfb69aae392",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//div[13]/div/span/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "edddc930-da6e-4a36-bc71-511a4b51ae5f",
+      "comment": "",
+      "command": "//This Test Cases Takes very long to run about 3 minutes on my machine",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4807ac02-cb9b-4f2f-8d16-5ebf0ea75320",
+    "name": "Amazon- Login",
+    "commands": [{
+      "id": "c9133d28-7eb4-44c6-8a75-17b614e9666f",
+      "comment": "",
+      "command": "//Make sure you are logged out",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b01aa946-0ad0-48ff-974e-b9c55ffae49e",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.ca%2Fyour-account%3Fref_%3Dnav_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=caflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9b705ea0-b0a1-415f-b8b6-56b092bd2ce7",
+      "comment": "",
+      "command": "click",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d867144-4031-40b5-849e-9bfbb30723fc",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "JohnDoeEx123@gmail.com"
+    }, {
+      "id": "7485698e-ec7d-4597-b4dc-a07883e12678",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-button-inner > #continue",
+      "targets": [
+        ["css=.a-button-inner > #continue", "css:finder"],
+        ["xpath=//input[@id='continue']", "xpath:attributes"],
+        ["xpath=//span[@id='continue']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a40f2834-451a-4e7a-bd7b-b3e2377bb6fe",
+      "comment": "",
+      "command": "click",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc29ef94-7b0e-43d6-91fb-27ab9557eed4",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_password",
+      "targets": [
+        ["id=ap_password", "id"],
+        ["name=password", "name"],
+        ["css=#ap_password", "css:finder"],
+        ["xpath=//input[@id='ap_password']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "Qwert123!"
+    }, {
+      "id": "b82487e5-c990-4602-9508-b2e0cbd79e2d",
+      "comment": "",
+      "command": "click",
+      "target": "id=signInSubmit",
+      "targets": [
+        ["id=signInSubmit", "id"],
+        ["css=#signInSubmit", "css:finder"],
+        ["xpath=//input[@id='signInSubmit']", "xpath:attributes"],
+        ["xpath=//span[@id='auth-signin-button']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "48be5326-6f1b-4bf7-98da-7d16e2d571df",
+    "name": "Amazon- Invalid Login",
+    "commands": [{
+      "id": "031100d4-ab11-45c4-915b-bf6ffa32bd9e",
+      "comment": "",
+      "command": "//Make sure you are logged out of all account for this test case to run",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "afaf4f09-de02-43e9-a1d6-2a64b886e037",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.ca%2Fyour-account%3Fref_%3Dnav_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=caflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "86e48335-7f0d-4ebe-8a9b-6b64376e32a4",
+      "comment": "",
+      "command": "click",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b99d4ce-9a3e-4b0c-a5a7-0fc0b8f404f6",
+      "comment": "",
+      "command": "type",
+      "target": "id=ap_email",
+      "targets": [
+        ["id=ap_email", "id"],
+        ["name=email", "name"],
+        ["css=#ap_email", "css:finder"],
+        ["xpath=//input[@id='ap_email']", "xpath:attributes"],
+        ["xpath=//div[@id='authportal-main-section']/div[2]/div/div/form/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "example123@gmail.com"
+    }, {
+      "id": "1367963c-66cd-40b2-9749-d0b2f623e8b0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.a-button-inner > #continue",
+      "targets": [
+        ["css=.a-button-inner > #continue", "css:finder"],
+        ["xpath=//input[@id='continue']", "xpath:attributes"],
+        ["xpath=//span[@id='continue']/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e8dcbb2-bc77-4aea-b9b1-9edcb7df071c",
+      "comment": "",
+      "command": "//Should not allow user because it is not real \"Send an OTP\"",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1c23ce18-8e7a-42e8-a648-7a22ab384584",
+    "name": "Amazon- Best Sellers Function",
+    "commands": [{
+      "id": "bd13fe39-6e94-4596-a2fe-70af46424b46",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fc013ee4-ce1e-4911-923d-08315807d6dc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Best Sellers",
+      "targets": [
+        ["linkText=Best Sellers", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'Best Sellers')]", "xpath:link"],
+        ["xpath=//div[@id='nav-xshop']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/Best-Sellers-generic/zgbs/?ref_=nav_cs_bestsellers')]", "xpath:href"],
+        ["xpath=//div[2]/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Best Sellers')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "293704a5-a73f-4b00-a8ce-e71c5fd82ac3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.\\_p13n-zg-nav-tree-all_style_zg-browse-item__1rdKf:nth-child(7) > a",
+      "targets": [
+        ["css=.\\_p13n-zg-nav-tree-all_style_zg-browse-item__1rdKf:nth-child(7) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Books')])[3]", "xpath:link"],
+        ["xpath=//div[@id='CardInstanceM7rmuPXF557onqUqFwMXWg']/div[2]/div[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/best-sellers-books-Amazon/zgbs/books/ref=zg_bs_nav_0')]", "xpath:href"],
+        ["xpath=//div[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39aa8dec-67b2-44bd-be25-b672fa83d6d5",
+      "comment": "",
+      "command": "//Covers Function of opening Best Sellers and Looking into Books",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "97bd4097-44bc-46f1-8b7c-fbbc8ea586aa",
+    "name": "Amazon- Address",
+    "commands": [{
+      "id": "e1663b9b-1a57-4c27-b0d7-878b42d788b3",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcaebad9-5bec-4f55-9c3f-7104cf1df258",
+      "comment": "",
+      "command": "click",
+      "target": "id=glow-ingress-line2",
+      "targets": [
+        ["id=glow-ingress-line2", "id"],
+        ["css=#glow-ingress-line2", "css:finder"],
+        ["xpath=//span[@id='glow-ingress-line2']", "xpath:attributes"],
+        ["xpath=//div[@id='glow-ingress-block']/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "87a199aa-4535-4545-bf62-0e75212dd3c0",
+      "comment": "",
+      "command": "click",
+      "target": "id=GLUXZipUpdateInput_0",
+      "targets": [
+        ["id=GLUXZipUpdateInput_0", "id"],
+        ["css=#GLUXZipUpdateInput_0", "css:finder"],
+        ["xpath=//input[@id='GLUXZipUpdateInput_0']", "xpath:attributes"],
+        ["xpath=//div[@id='GLUXZipInputSection']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "95d42957-4382-432f-968b-713fbfbbacf5",
+      "comment": "",
+      "command": "type",
+      "target": "id=GLUXZipUpdateInput_0",
+      "targets": [
+        ["id=GLUXZipUpdateInput_0", "id"],
+        ["css=#GLUXZipUpdateInput_0", "css:finder"],
+        ["xpath=//input[@id='GLUXZipUpdateInput_0']", "xpath:attributes"],
+        ["xpath=//div[@id='GLUXZipInputSection']/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "T2N"
+    }, {
+      "id": "877983d9-3e7a-4b82-821f-891a092e15af",
+      "comment": "",
+      "command": "click",
+      "target": "id=GLUXZipUpdateInput_1",
+      "targets": [
+        ["id=GLUXZipUpdateInput_1", "id"],
+        ["css=#GLUXZipUpdateInput_1", "css:finder"],
+        ["xpath=//input[@id='GLUXZipUpdateInput_1']", "xpath:attributes"],
+        ["xpath=//div[@id='GLUXZipInputSection']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d95c5da-dfdd-4600-8964-0eef2c9bcc14",
+      "comment": "",
+      "command": "type",
+      "target": "id=GLUXZipUpdateInput_1",
+      "targets": [
+        ["id=GLUXZipUpdateInput_1", "id"],
+        ["css=#GLUXZipUpdateInput_1", "css:finder"],
+        ["xpath=//input[@id='GLUXZipUpdateInput_1']", "xpath:attributes"],
+        ["xpath=//div[@id='GLUXZipInputSection']/div/input[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input[2]", "xpath:position"]
+      ],
+      "value": "1N4"
+    }, {
+      "id": "7f505f57-07fd-40fb-a092-e341e9db4c4c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#GLUXZipUpdate .a-button-input",
+      "targets": [
+        ["css=#GLUXZipUpdate .a-button-input", "css:finder"],
+        ["xpath=(//input[@type='submit'])[4]", "xpath:attributes"],
+        ["xpath=//span[@id='GLUXZipUpdate']/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b89e34bf-2fe6-4d65-9308-1b0bf4e77d18",
+      "comment": "",
+      "command": "//Should update the Postal Code to the school's address",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5736eadc-c44a-44e3-bb1a-51f316d1d902",
+    "name": "Amazon- Testing Home Button",
+    "commands": [{
+      "id": "4835cbc5-2474-49e5-9bed-abea66796abe",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c9a083e-9640-49a3-adc3-e558ad6dcb89",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Deals Store",
+      "targets": [
+        ["linkText=Deals Store", "linkText"],
+        ["css=#nav-xshop > .nav-a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Deals Store')]", "xpath:link"],
+        ["xpath=//div[@id='nav-xshop']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/deals?ref_=nav_cs_gb')]", "xpath:href"],
+        ["xpath=//div[2]/div/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Deals Store')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "66b60199-8700-4cf5-9ff4-cd21c42e53f2",
+      "comment": "",
+      "command": "click",
+      "target": "css=span:nth-child(1) .LinkFilterOption-module__linkFilterOptionListElement_AzC4LFMfeFF1CkwveJM01:nth-child(2) span",
+      "targets": [
+        ["css=span:nth-child(1) .LinkFilterOption-module__linkFilterOptionListElement_AzC4LFMfeFF1CkwveJM01:nth-child(2) span", "css:finder"],
+        ["xpath=//div[@id='grid-main-container']/div[2]/span/ul/li[2]/div/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6368c2ba-aac9-48c8-abf4-4ddedacfd732",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-logo-sprites",
+      "targets": [
+        ["id=nav-logo-sprites", "id"],
+        ["linkText=.ca", "linkText"],
+        ["css=#nav-logo-sprites", "css:finder"],
+        ["xpath=//a[@id='nav-logo-sprites']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-logo']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ref=nav_logo')]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'.ca')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06659fe6-2cbe-40fd-95aa-f9d7b3e9b0c6",
+      "comment": "",
+      "command": "//Takes us back to the home page",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "7fcd64a4-2525-4186-beb5-555ac52a076f",
+    "name": "Amazon- Remove from Cart",
+    "commands": [{
+      "id": "3d4923c7-4940-4bd5-8dc9-27fbaff0513a",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.ca/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cc5d26bf-2580-4a92-9c90-34e43fad6bde",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bf6b3360-328d-44ea-9110-8e4506fbe53a",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "waterbottle"
+    }, {
+      "id": "aa919a88-030a-4f63-bf0c-d2aa89fea254",
+      "comment": "",
+      "command": "click",
+      "target": "id=nav-search-submit-button",
+      "targets": [
+        ["id=nav-search-submit-button", "id"],
+        ["css=#nav-search-submit-button", "css:finder"],
+        ["xpath=//input[@id='nav-search-submit-button']", "xpath:attributes"],
+        ["xpath=//span[@id='nav-search-submit-text']/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1725aec-ad4f-4069-af47-2c7eacef4b13",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sg-col-4-of-24:nth-child(4) .s-product-image-container .a-section",
+      "targets": [
+        ["css=.sg-col-4-of-24:nth-child(4) .s-product-image-container .a-section", "css:finder"],
+        ["xpath=//div[@id='search']/div/div/div/span/div/div[4]/div/div/div/div/div[2]/span/a/div", "xpath:idRelative"],
+        ["xpath=//div/div/div/div/div[2]/span/a/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62370c50-dcd1-4eba-875b-fde3214c87d4",
+      "comment": "",
+      "command": "click",
+      "target": "id=add-to-cart-button",
+      "targets": [
+        ["id=add-to-cart-button", "id"],
+        ["name=submit.add-to-cart", "name"],
+        ["css=#add-to-cart-button", "css:finder"],
+        ["xpath=//input[@id='add-to-cart-button']", "xpath:attributes"],
+        ["xpath=//span[@id='submit.add-to-cart']/span/input", "xpath:idRelative"],
+        ["xpath=//span/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd70db10-5be7-4115-b06c-e63dab2d2510",
+      "comment": "",
+      "command": "click",
+      "target": "css=.nav-cart-icon",
+      "targets": [
+        ["css=.nav-cart-icon", "css:finder"],
+        ["xpath=//div[@id='nav-cart-count-container']/span[2]", "xpath:idRelative"],
+        ["xpath=//a[4]/div/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4ef077dc-2975-43d9-b291-857b5655a4c7",
+      "comment": "",
+      "command": "click",
+      "target": "id=a-autoid-1-announce",
+      "targets": [
+        ["id=a-autoid-1-announce", "id"],
+        ["css=#a-autoid-1-announce", "css:finder"],
+        ["xpath=//span[@id='a-autoid-1-announce']", "xpath:attributes"],
+        ["xpath=//span[@id='a-autoid-1']/span/span", "xpath:idRelative"],
+        ["xpath=//span/span/span/span/span/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36037be1-6183-4ea5-983f-ebde178df600",
+      "comment": "",
+      "command": "click",
+      "target": "id=quantity_0",
+      "targets": [
+        ["id=quantity_0", "id"],
+        ["linkText=0 (Delete)", "linkText"],
+        ["css=#quantity_0", "css:finder"],
+        ["xpath=//a[contains(text(),'0 (Delete)')]", "xpath:link"],
+        ["xpath=//a[@id='quantity_0']", "xpath:attributes"],
+        ["xpath=//div[@id='a-popover-2']/div/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:void(0)')])[2]", "xpath:href"],
+        ["xpath=//div[7]/div/div/ul/li/a", "xpath:position"],
+        ["xpath=//a[contains(.,'0 (Delete)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "0a373d00-d3f7-40bc-823c-fc0799959572",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["6e1ea1ae-32b8-4306-9e7d-5f35d808bdd8"]
+  }],
+  "urls": ["https://www.amazon.ca/"],
+  "plugins": []
+}
