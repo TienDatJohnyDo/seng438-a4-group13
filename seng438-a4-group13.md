@@ -13,9 +13,66 @@
 The main objective of this laboratory assignment was to gain familiarity with the fundamental concepts of mutation testing and GUI testing, as previously presented in the lectures. In pursuit of this goal, our group opted to employ the PIT testing tool within Eclipse to evaluate mutation coverage. In Part 2 of the lab, we employed the Selenium IDE extension on our Google Chrome browser to further enhance our comprehension of this essential tool. In addition to our primary focus on mutation testing, we recognized the importance of conducting GUI testing to automate test cases centered around user interfaces. Through these exercises, we endeavored to detect potential weaknesses within the original source code, identifying areas that may not have been thoroughly tested.
 
 # Analysis of 10 Mutants of the Range class 
+#### getUpperBound()Mutation :  (Return this.upper)
+
+Negated double field upper -> Killed
+
+This mutation will mutate this.upper field before it is returned. For example the upper bound is 1 it will be negated to -1 and then returned, but through our original test cases we have a test case that handles that mutation as well as the range constructor testing the lower and upper bound before going through with any method.
+
+#### getLength() Mutation : (return this.upper - this.lower)
+
+Incremented (a++) double field upper → SURVIVED
+
+This mutation will mutate this.upper and post increment it by adding 1. This mutation does not get killed through our original test cases. We did not take into consideration the increment of a local variable.member variables for this mutation within this method.
+
+#### expandToInclude(Range range, double value) if(range ==null)
+
+removed conditional - replaced equality check with true → KILLED
+
+This mutation will mutate the if statement to be true which is covered within our original test case just by inputting an integer number range. The guarded statement will always execute.
+
+#### intersects() Mutation : (if b0 <= this.lower) 
+
+greater than to greater or equal → KILLED
+
+This mutation will mutate the if statement to if (b0>=this.lower) which is covered within our test cases meaning we have already made a test case where b0 is larger than or equal to this.lower which means this mutation was killed
+
+#### constrain(double value) if (value > this.upper) Mutation :
+
+Less or equal to equal → KILLED
+
+This mutation will mutate the if statement to if(value<=this.upper) which is also covered in our original test cases meaning we have made a test case were the value is bigger of equal to this.upper, meaning this mutation was killed. 
+
+#### combine(Range range1, Range range2) : Mutation if (range1 == null)
+
+Mutation : negated conditional → KILLED
+
+This mutation will mutate the if condition to if(range1 !=null). This mutation will test if the range1 is a number. Our original test cases killed this mutation by using integer numbers as inputs for the range.
+
+#### combineIgnoringNaN(Range range1, Range range2) : Mutation if(range1.isNaNRange())
+
+equal to less or equal → SURVIVED
+
+This mutation will turn the if statement to be if it’s less than “not a number” or equal to “not a number”. This test case is only possible if the number is not a number which is not covered in our original test. As well as to be less than “not a number” cannot be determined meaning this mutation will survive.
+
+#### min(double d1, double d2): Mutation if (Double.isNaN(d1)) 
+
+equal to greater or equal → SURVIVED 
+
+This mutation will turn the if statement to if(d1 >= to NaN). This test case is similar to the one above where we cannot determine a value that is greater than “not a number” meaning this mutation survived in our oriignal test suite. 
+
+#### expandToInclude(Range range, double value): Mutation if (value < range.getLowerBound())
+
+changed conditional boundary → SURVIVED
+
+This mutation will turn the if condition to if(value <=range.getLowerBound()). In our original test case we did not test any values in which the value equaled the lower bound meaning that this mutation survived.
 
 
+#### isNaNRange() : Mutation return Double.isNaN(this.lower) && Double.isNaN(this.upper)
 
+removed conditional - replaced equality check with true → SURVIVED
+
+This mutation will turn this.lower and this.upper to “not a number”. This mutation was not covered by our original test cases by not testing any lower or upper ound that are not a number. 
 
 
 # Report all the statistics and the mutation score for each test class
