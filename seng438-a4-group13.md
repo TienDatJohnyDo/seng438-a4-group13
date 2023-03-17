@@ -105,6 +105,8 @@ However, the presence of equivalent mutants may lead to an overinflated mutation
 To ensure that the mutation score precisely reflects the quality of testing, it is necessary to exclude equivalent mutants from the score.
 
 # A discussion of what could have been done to improve the mutation score of the test suites
+
+In our case, our group could have still made more test cases in order to get a better mutation score. I did 
 ## Range Class :
 We killed the following mutations listed below :
 
