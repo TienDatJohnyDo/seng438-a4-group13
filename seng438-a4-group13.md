@@ -94,7 +94,7 @@ Our Mutation score went from 57% to 67% which is a 10 percent increase from the 
 ![NewRange](NewDataUtilities.png)
 Our Mutation score went from 78% to 88% which is a 10 percent increase from the orignal test case suite for the DataUtilities class. 
 
-In brief, our group was able to achieve a 10 percent increase on both classes meaning we solved a portion of the survived mutants.
+In brief, our group was able to achieve a 10 percent increase on both classes meaning we solved a portion of the survived mutants. We added quite a few more test cases in order to kill the mutations in the source code. In order to do that, our group reviewed all of the mutation lines and kill some mutations by method discussed further in the report. 
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
