@@ -106,7 +106,8 @@ To ensure that the mutation score precisely reflects the quality of testing, it 
 
 # A discussion of what could have been done to improve the mutation score of the test suites
 
-In our case, our group could have still made more test cases in order to get a better mutation score. I did 
+In our case, our group could have still made more test cases in order to get a better mutation score. As well our group could make more efficient test cases by using a variety of data sets from Not a number inputs, invalid inputs, negative inputs, positive inputs, valid inputs, just to list a few. Another stategy our group made was to try to deal with any if/ branch statements due to these mutations being easier to create test cases for. Lastly, we found that boundary condition changes were also a focus in order to increase our mutation testing score. In brief, our group focused on the branch mutations for this assignment, but in order to keep on increasing the mutation score further would be to focuse on increment/decrement as well as negation mutations. Below we have a comprehensive list of mutations we have killed in Range and DataUtilities.
+
 ## Range Class :
 We killed the following mutations listed below :
 
