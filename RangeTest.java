@@ -953,7 +953,7 @@ public class RangeTest {
 
 		@Test
 		// testing the hashing method to see the correctness of the hash
-		public void hashCodeTest() {
+		public void hashCodeTestValid() {
 			testMutation = new Range(2, 6);
 			int result = testMutation.hashCode();
 			assertEquals("Result should be ->", -2145910784, result);
