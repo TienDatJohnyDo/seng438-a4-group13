@@ -38,21 +38,180 @@ The main objective of this laboratory assignment was to gain familiarity with th
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
+Equivalent mutants refer to mutations that do not alter the behavior of the original code, and thus produce the same output as the unmutated code. These mutants do not affect the accuracy of the mutation score because they have the same behavior as the original code.
+
+However, the presence of equivalent mutants may lead to an overinflated mutation score, as they are counted as additional mutations that have been killed. This can create a false impression that the code has been more rigorously tested than it actually has.
+
+To ensure that the mutation score precisely reflects the quality of testing, it is necessary to exclude equivalent mutants from the score.
+
 # A discussion of what could have been done to improve the mutation score of the test suites
+## Range Class :
+
+## DataUtilities Class :
+DataUtilities Class : 
+Our group added 8 more test cases in order to increase our Mutation Coverage from 78% to 88%. Our group found that mutation testing for conditional test were easier to find and write test cases for. We added 8 more test cases to kill the following Mutations:
+
+### Calculate ColumnTotal Method : 
+* Line 155, line 19, Mutation 1 : Negated integer local variable number 7 
+* Line 155, line 19, Mutation 2 : Greater or equal to equal 
+* Line 155, line 19, Mutation 3 : Incremented (a++) integer local variable number 5
+* Line 157, line 7, Mutation 1 : Removed conditional - replaced equality check with true 
+
+### CalculateRowTotal Method :
+* Line 206, line 19, Mutation 1 : Line Negated integer local variable number 7 
+* Line 206, line 19, Mutation 2 :Greater or Equal to Equal 
+* Line 206, line 19, Mutation 3 :Increment (a++) integer local variable number 5
+
+### Clone Method : 
+* Note since we had to have a green test suite with no failures, our group had to comment out the test cases from clone and create new ones *
+* CloneNullCase
+* CloneNegative
+* ClonePositive
+
+#### CalculateColumnTotal
+**calculateColumTotalRowOutofRange()** 
+Parameters : (Values2D, int column, int [ ] row)
+
+
+In this test we tested when the condition of if(row<rowCount) condition where we would make this condition mutate false by making row[] = 100 and rowCount being 1 meaning row>rowCount. Meaning the valid row we want to check is out of range.
+
+**calculateColumnTotalRowLower()** 
+Parameters : (Values2D, int column, int [ ] row)
+
+
+In this test we tested when the condition of if(row<countCount) condition where we would make this condition mutate false by making row[] = 1 and rowCount being 1 meaning row =rowCount. Meaning the valid row we want to check is equal to the row.
+
+
+**calculateColumnTotalNull()**  Parameters : (Values2D, int column, int [ ] row)
+
+
+In this test we tested when the condition of if (n !=null) condition where we would make this condition mutate false by making n = null in two different rows meaning that n is null in more than one input. 
+
+#### CalculateRowTotal
+
+**calculateRowTotalColLower()**
+Parameters : (Values2D, int row, int [ ] column)
+
+
+In this test we tested when the condition of if (col < colCount) where we would make this condition mutate false by making column[ 1 ] and col = 1 meaning that col = colCount and making this false.
+
+
+**calculateRowTotalNull()**
+Parameters : (Values2D, int row, int [ ] column)
+
+
+In this test we tested when the condition of if (n !=null) condition where we would make this condition mutate false by making n = null in two different rows meaning that n is null in more than one input. 
+
+####clone()
+
+**cloneNullCase()**
+
+
+In this test we tested when the condition of if(source[i] != null) where we would make this condition mutate false by making all the inputs of the source array null. Meaning that source[i] == null making this condition false.
+
+**cloneNegative()**
+
+
+In this test we tested when the condition of if(source[i] != null) where we would make this condition mutate true by making all the inputs of the source array negative. Meaning that source[i] != null making this condition take in the negative inputs. 
+
+**clonePositive()**
+
+
+In this test we tested when the condition of if(source[i] != null) where we would make this condition mutate true by making all the inputs of the source array positive. Meaning that source[i] != null making this condition take in the positive inputs. 
 
 # Why do we need mutation testing? Advantages and disadvantages of mutation testing
 
+Mutation testing is a technique used in software testing to evaluate the effectiveness of test cases by introducing artificial defects, called mutants, into the codebase. The primary purpose of mutation testing is to measure the quality of test cases by verifying their ability to detect the artificial mutations, thereby identifying weak spots in the code that may not have been adequately tested.
+
+Advantages of Mutation Testing:
+
+
+1. Mutation testing is useful in determining the quality of the test cases by evaluating their ability to detect the introduced artificial defects.
+
+
+2. By identifying areas of weakness in the code, mutation testing can help improve the overall quality and reliability of the software, thereby increasing confidence in the codebase.
+
+Disadvantages of Mutation Testing:
+
+
+1. Mutation testing involves introducing multiple artificial defects into the codebase, which can be a time-consuming process, especially for larger codebases.
+
+
+2. The presence of a mutation does not necessarily indicate a bug in the code, and the absence of mutations does not guarantee the absence of bugs. Therefore, it is essential to interpret the results of mutation testing with care
+
+
+
 # Explain your SELENUIM test case design process
 
+Steps :
+
+
+1. Familiarize with the Amazon Website
+
+
+2. Explore different functions and record steps on how to get there
+
+
+4. Write test cases for each function
+
+
+5. Execute
+
+
+Our group decided to use the Amazon website in order do do the selenium test cases. First we wanted to get familiar with the website by exploring the functions. We had to record a few steps on how to get to each functionality which is part of our test case design process. We then chose 4 functionalities of the website to make our test cases around. Firstly we explored the login function making one test case with a valid login and one with invalid login to make sure the function works. Secondly, we looking at the purchasing/Add to cart functionality where we first searched for an iteam then added to the cart. In addition, we made another test case to remove the item from the cart. Thirdly we wanted to check the functionality of language change on the website by first selecting to change the language of the website to french and another test case to change it back to english. Furthermore we explored the functionality of changing departments on the website by filtering the search to amazon devices and we create another test case to change the department back to all. Lastly, we added a test case to go back to the home page through pressing the amazon button at the top of the page. Our group made these test cases through our exploratory phase familiarizing ourselves with the website. 
+
+
 # Explain the use of assertions and checkpoints
+To ensure the accuracy and reliability of software being tested, software testers frequently use assertions and checkpoints.
+
+Assertions are code statements that validate if a specific condition is true or false. They are employed primarily to verify that the actual result of a test matches the anticipated result. If an assertion fails, it indicates a problem with the software and that the test has failed.
+
+Checkpoints are a type of assertion that compares the current state of the software to a predetermined set of expected results. They are typically employed to guarantee that the software is operating correctly at specific points throughout the testing process.
 
 # how did you test each functionaity with different test data
 
+To ensure the thoroughness of our testing, we evaluated each functionality using various types of data, including both valid and invalid sets. For instance, we tested the login function using a set of data that was considered valid for login purposes to assess the functionality, and the system responded by granting the user access. Subsequently, we tested the same function using invalid data, such as attempting to sign in with an incorrect password, which produced an error message.
+
 # Discuss advantages and disadvantages of Selenium vs. Sikulix
 
-# How the team work/effort was divided and managed
+Both Selenium and SikuliX are popular testing frameworks utilized for automated testing of web applications. The following are some advantages and disadvantages of each framework:
 
+Advantages of Selenium:
+
+
+1. It supports a wide variety of web browsers, including Chrome, Firefox, Safari, Edge, and Internet Explorer, making it ideal for testing web applications across multiple platforms.
+
+
+2. Selenium is a robust open-source tool that offers a framework for automating web application testing, and it benefits from a vibrant community of developers who continually contribute to its development and maintenance.
+
+Disadvantages of Selenium:
+
+
+1. Learning and mastering Selenium can be difficult, particularly for individuals with minimal to no programming experience.
+2. Selenium is primarily designed for testing web applications and is not suitable for desktop application testing.
+
+Advantages of SikulX:
+
+
+1. With support for multiple scripting languages, including Python and Java, SikuliX is a flexible and versatile tool for automating desktop application testing.
+
+
+2. SikuliX is capable of using image recognition to automate desktop application testing, which makes it well-suited for testing applications that do not have adequate automation support.
+
+Disadvantages of SikulX:
+
+
+1. SikuliX is mainly created for testing desktop applications and lacks support for testing web applications.
+
+
+2. SikuliX's image recognition feature can be unreliable and prone to errors, especially when the test environment is not consistent.
+
+
+# How the team work/effort was divided and managed
+To ensure that everyone in our group gained experience in Mutation testing and GUI testing, we divided the tasks among ourselves where it would be pair testing. One set of groups did Range and a couple Selenium test cases and another group did DataUtilities and a couple Selenium test cases. After a group has finished getting at least 10% on the test class they were assigned they sent it to the repository for the other group to check over and cross-check. For the selenium we would send it out to our repository and execute the test case in our browser to understand how each test case worked. Pairs were Tommy and Tien Dat and the other pair was Stuart and Sina. We would then compile all our information from the mutation testing and GUI testing in the lab write up in the respective places. 
 
 # Difficulties encountered, challenges overcome, and lessons learned
+One of the greatest difficulties encountered in this lab is how long it took for the mutation testing using PIT Mutation Testing. Running PIT each time took around 3-5 minutes on our machines which is not ideal when trying to test source code. Not only was PIT very time consuming, but also very resource demanding, especially with the Memory of our computers. We were able to overcome these challenges by deleting the JFree Chart packages from the Java project since JFree Chart was not the part of the program that we were testing. By doing so, decreased the test time drastically as well as less demand on computer resources. The lesson learned here was that Mutation testing is a great way to increase the quality of your code, but also very demanding on time and resources which is why it is important to know what you are testing and to find if there are any ways to make the testing process easier.
 
 # Comments/feedback on the lab itself
+Assignment 4 was a great way to introduce us into the world of GUI and Mutation testing. The assignment outline gave clear indications of how to use each tool. The only drawback of this lab was the initial setup for the Mutation testing and getting all of JFree_Lab4 working properly by ensuring that all of the external libraries were added as well as the proper external libraries from the previous assignment.
