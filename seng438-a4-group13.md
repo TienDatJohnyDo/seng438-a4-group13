@@ -48,7 +48,6 @@ To ensure that the mutation score precisely reflects the quality of testing, it 
 ## Range Class :
 
 ## DataUtilities Class :
-DataUtilities Class : 
 Our group added 8 more test cases in order to increase our Mutation Coverage from 78% to 88%. Our group found that mutation testing for conditional test were easier to find and write test cases for. We added 8 more test cases to kill the following Mutations:
 
 ### Calculate ColumnTotal Method : 
@@ -68,54 +67,52 @@ Our group added 8 more test cases in order to increase our Mutation Coverage fro
 * CloneNegative
 * ClonePositive
 
-#### CalculateColumnTotal
-**calculateColumTotalRowOutofRange()** 
+### CalculateColumnTotal
+#### **calculateColumTotalRowOutofRange()** 
 Parameters : (Values2D, int column, int [ ] row)
 
 
 In this test we tested when the condition of if(row<rowCount) condition where we would make this condition mutate false by making row[] = 100 and rowCount being 1 meaning row>rowCount. Meaning the valid row we want to check is out of range.
 
-**calculateColumnTotalRowLower()** 
+#### **calculateColumnTotalRowLower()** 
 Parameters : (Values2D, int column, int [ ] row)
 
 
 In this test we tested when the condition of if(row<countCount) condition where we would make this condition mutate false by making row[] = 1 and rowCount being 1 meaning row =rowCount. Meaning the valid row we want to check is equal to the row.
 
 
-**calculateColumnTotalNull()**  Parameters : (Values2D, int column, int [ ] row)
-
+#### **calculateColumnTotalNull()**  Parameters : (Values2D, int column, int [ ] row)
 
 In this test we tested when the condition of if (n !=null) condition where we would make this condition mutate false by making n = null in two different rows meaning that n is null in more than one input. 
 
-#### CalculateRowTotal
+### CalculateRowTotal
 
-**calculateRowTotalColLower()**
+#### **calculateRowTotalColLower()**
 Parameters : (Values2D, int row, int [ ] column)
 
 
 In this test we tested when the condition of if (col < colCount) where we would make this condition mutate false by making column[ 1 ] and col = 1 meaning that col = colCount and making this false.
 
 
-**calculateRowTotalNull()**
+#### **calculateRowTotalNull()**
 Parameters : (Values2D, int row, int [ ] column)
 
 
 In this test we tested when the condition of if (n !=null) condition where we would make this condition mutate false by making n = null in two different rows meaning that n is null in more than one input. 
 
-####clone()
+### clone()
 
-**cloneNullCase()**
+#### **cloneNullCase()**
 
 
 In this test we tested when the condition of if(source[i] != null) where we would make this condition mutate false by making all the inputs of the source array null. Meaning that source[i] == null making this condition false.
 
-**cloneNegative()**
+#### **cloneNegative()**
 
 
 In this test we tested when the condition of if(source[i] != null) where we would make this condition mutate true by making all the inputs of the source array negative. Meaning that source[i] != null making this condition take in the negative inputs. 
 
-**clonePositive()**
-
+#### **clonePositive()**
 
 In this test we tested when the condition of if(source[i] != null) where we would make this condition mutate true by making all the inputs of the source array positive. Meaning that source[i] != null making this condition take in the positive inputs. 
 
