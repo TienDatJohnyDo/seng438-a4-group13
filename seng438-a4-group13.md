@@ -92,7 +92,7 @@ Our Mutation score went from 57% to 67% which is a 10 percent increase from the 
 
 ## New DataUtilities Mutation Test Statistics
 ![NewRange](NewDataUtilities.png)
-Our Mutation score went from 78%% to 88% which is a 10 percent increase from the orignal test case suite for the DataUtilities class. 
+Our Mutation score went from 78% to 88% which is a 10 percent increase from the orignal test case suite for the DataUtilities class. 
 
 In brief, our group was able to achieve a 10 percent increase on both classes meaning we solved a portion of the survived mutants.
 
@@ -109,9 +109,9 @@ To ensure that the mutation score precisely reflects the quality of testing, it 
 We killed the following mutations listed below :
 
 
-getCentralValue():
-Line 143, replaced double return with 0.0d
-Line 143, replaced double addition with modulus
+### getCentralValue():
+* Line 143, replaced double return with 0.0d
+* Line 143, replaced double addition with modulus
 
 ### intersects(double, double):
 * Line 157, changed conditional boundary
