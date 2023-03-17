@@ -1,21 +1,28 @@
 **SENG 438 - Software Testing, Reliability, and Quality**
 
 **Lab. Report \#4 – Mutation Testing and Web app testing**
-
-| Group \#:      |     |
+| Group \#: 13     |  |
 | -------------- | --- |
 | Student Names: |     |
-|                |     |
-|                |     |
-|                |     |
+| Tien Dat Johny Do         |     |
+| Tommy Dinh              |     |
+| Stuart Johnstone               |     |
+| Sina Tavakol Moghaddam              |     |
 
 # Introduction
-
+The main objective of this laboratory assignment was to gain familiarity with the fundamental concepts of mutation testing and GUI testing, as previously presented in the lectures. In pursuit of this goal, our group opted to employ the PIT testing tool within Eclipse to evaluate mutation coverage. In Part 2 of the lab, we employed the Selenium IDE extension on our Google Chrome browser to further enhance our comprehension of this essential tool. In addition to our primary focus on mutation testing, we recognized the importance of conducting GUI testing to automate test cases centered around user interfaces. Through these exercises, we endeavored to detect potential weaknesses within the original source code, identifying areas that may not have been thoroughly tested.
 
 # Analysis of 10 Mutants of the Range class 
 
-# Report all the statistics and the mutation score for each test class
+### Range Mutation Test Statistics 
 
+
+### DataUtilities Mutation Test Statistics
+
+
+
+
+# Report all the statistics and the mutation score for each test class
 
 
 # Analysis drawn on the effectiveness of each of the test classes
