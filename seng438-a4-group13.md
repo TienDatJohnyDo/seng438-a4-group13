@@ -72,7 +72,7 @@ This mutation will turn the if condition to if(value <=range.getLowerBound()). I
 
 removed conditional - replaced equality check with true → SURVIVED
 
-This mutation will turn this.lower and this.upper to “not a number”. This mutation was not covered by our original test cases by not testing any lower or upper ound that are not a number. 
+This mutation will turn this.lower and this.upper to “not a number”. This mutation was not covered by our original test cases by not testing any lower or upper bound that is not a number. 
 
 
 # Report all the statistics and the mutation score for each test class
@@ -94,7 +94,7 @@ Our Mutation score went from 57% to 67% which is a 10 percent increase from the 
 ![NewRange](NewRange.png)
 Our Mutation score went from 78%% to 88% which is a 10 percent increase from the orignal test case suite for the DataUtilities class. 
 
-In brief, our group was able to achieve a 10 percent increase on both classes meaning we solved a good protion of the survived mutants.
+In brief, our group was able to achieve a 10 percent increase on both classes meaning we solved a portion of the survived mutants.
 
 # A discussion on the effect of equivalent mutants on mutation score accuracy
 
