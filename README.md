@@ -10,4 +10,5 @@ This repository contains
 * Our written lab report for Assignment 4
 * Our Part 1 Test Cases for Range and DataUtilities Classes
 * Our Part 2 Test Script with Selenium IDE
+* A few images of results of the PIT Testing
 * And Previous items from the cloned repository
